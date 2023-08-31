@@ -16,6 +16,5 @@ total_in_grams = talents_to_grams + pounds_to_grams + lots_to_grams
 kilograms = total_in_grams // GRAMS_PER_KILOGRAM
 remaining_grams = total_in_grams % GRAMS_PER_KILOGRAM
 
-# Output the result
 print("The mass is approximately:")
 print(f"{kilograms:.0f} kilograms and {remaining_grams:.2f} grams")
