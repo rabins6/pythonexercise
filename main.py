@@ -1,7 +1,8 @@
-year = int(input("ENTER YEAR "))
-if ((year % 400 == 0) or
-        (year % 100 != 0) and
-        (year % 4 == 0)):
-    print("Leap Year")
-else:
-    print("Not leap year")
+import random
+
+three_digit_code = [random.randint(0, 9) for _ in range(3)]
+
+four_digit_code = [random.randint(1, 6) for _ in range(4)]
+
+print("3-Digit Code:", "".join(map(str, three_digit_code)))
+print("4-Digit Code:", "".join(map(str, four_digit_code)))
